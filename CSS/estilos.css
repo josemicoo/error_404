@@ -32,12 +32,18 @@ html {
     width: 25%;
     position: absolute;
     left: 1000px;
-    margin-top: 16%;
+    margin-top: 9%;
     animation-name: animacion_error;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in ;
     animation-fill-mode: both ;
+
+}
+
+.error_404 img {
+    position: relative;
+    top: 180px;
 }
 
 .error {width: 100%;}
