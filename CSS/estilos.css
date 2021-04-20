@@ -1,0 +1,135 @@
+*{ margin: 0; padding: 0;}
+
+html {
+    height:100%;
+    width: 100%;
+    background-color: #656565;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contenedor {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gif {
+    width: 50%;
+    position: absolute;
+    top: 180px;
+}
+
+.gif_imagen {
+    width: 100%;
+    border-radius: 500px;
+}
+
+.titulo {
+    position: absolute;
+    left: 640px;
+    width: 60%;
+    top: 160px;
+    animation-name: opacidadTitulo, posicionTitulo;
+    animation-duration: 1s;
+
+}
+
+.error_404 {
+    width: 25%;
+    position: absolute;
+    left: 700px;
+    top: 120px;
+    animation-name: animacion_error;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in ;
+    animation-fill-mode: both ;
+
+}
+
+.error_404 img {
+    position: relative;
+    top: 180px;
+    animation-name: opacidadTitulo;
+    animation-duration: 2s;
+}
+
+.error {width: 100%;}
+
+p {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.tuPaginaNoFueEncontrada {
+    position: absolute;
+    width: 50%;
+    top: 450px;
+    left: 600px;
+    animation-name: scaleTuPaginaNo;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    transform:scale(0) ;
+    animation-fill-mode: forwards;
+}
+
+.imagen_titulo {
+    width: 60%;
+}
+
+
+.boton_Home  {
+    background-color: #C4C4C4;
+    width:58%;
+    height: 80%;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 105px;
+    border-radius: 50px;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    transition: 0.5s;
+
+}
+
+.boton_Home:hover {
+    -webkit-box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    -moz-box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    filter: shadow(color=#fffefe, direction=135, strength=2);
+
+}
+
+.volver_Txt {
+    color: rgb(82, 82, 82);
+    margin-top: 4%;
+}
+
+
+@keyframes animacion_error {
+    0%{transform: rotate(5deg);}
+    50% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+@keyframes posicionTitulo {
+    0%{top: 60px;}
+    100%{top: 160px;}
+}
+
+@keyframes opacidadTitulo {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+@keyframes scaleTuPaginaNo {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+
